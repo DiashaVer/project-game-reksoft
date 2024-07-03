@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Полицейские и мошенники</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="game-title">Полицейские и мошенники</h1>
+    <div id="progress-bar">
+        <label for="progress-line">Смена ролей</label>
+        <progress id="progress-line" max="100" value="70">70%</progress>
+    </div>
+
+    <div id="game-wrapper">
+        <div id="teams">
+    
+            <section id="team1">
+                <h2>Команда 1</h2>
+                <article class="team-info">
+                Смена ролей <br> полоса загрузки <br>
+                Название: Синяки <br> Очки: 0 <br> Осталось жизней: 5 
+                </srticle>
+            </section>
+    
+            <section id="team2">
+                <h2>Команда 2</h2>
+                <article class="team-info">
+                Название: Курилки <br> Очки: 0 <br> Осталось жизней: 5 
+                </article>
+            </section>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div id="game-log">
+            <textarea id="logTextarea" rows="2" cols="22">Игра готова к запуску</textarea>
+        </div>
+    </div>
+
+    <div id="buttons">
+        <button id="startButton">Старт</button>
+        <button id="stopButton">Стоп</button>
+        <button id="connectButton">Подключиться</button>
+        <button id="disconnectButton">Отключиться</button>
+        <button id="reconnectButton">Переподключение</button>
+        <button id="cancelButton">Отменить игру</button>
+        <button id="exitButton">Выход</button>
+    </div>
+
+
+</body>
+</html>

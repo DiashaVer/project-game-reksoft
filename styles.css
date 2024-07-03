@@ -1,0 +1,85 @@
+body {
+    height: 100vh;
+    
+}
+
+#game-title {
+    text-align: center;
+}
+
+#game-wrapper {
+    display: grid;
+    grid-template-columns: minmax(min-content, 25%) 50% minmax(min-content, 25%);
+    min-height: 80%;    
+    div {
+        border: 1px;
+        border-color: black;
+    }
+}
+
+#progress-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    color: white;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    
+    color: white;
+    background-color: #bcbaba; /* Пример фона */
+}
+
+button {
+    cursor: pointer;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    border-radius: 5px;
+}
+#startButton {
+    background-color: green; 
+}
+
+#stopButton {
+    background-color: #008CBA; 
+}
+
+#connectButton {
+    background-color: #008CBA; 
+}
+
+#disconnectButton {
+    background-color: #008CBA; 
+}
+
+#reconnectButton {
+    background-color: #008CBA; 
+}
+
+#cancelButton {
+    background-color: #a94c4c; 
+}
+
+#exitButton {
+    background-color: #a94c4c; 
+}
+
+button:hover {
+    color: white;
+}
+
+#logTextarea {
+    background-color: #cccccc; 
+    border: none;
+    resize: none;
+}
