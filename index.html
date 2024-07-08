@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Полицейские и мошенники</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+    <h1 id="game-title">Полицейские и мошенники</h1>
+    <div id="progress">
+        <label for="progressBar">Смена ролей</label>
+        <progress id="progressBar" max="100" value="70">70%</progress>
+    </div>
+
+    <div id="game-wrapper">
+        <div id="teams">
+    
+            <section id="team1">
+                <h2>Команда 1</h2>
+                <article class="team-info">
+                Название: Синяки <br> Очки: 0 <br> Осталось жизней: 5 
+                </srticle>
+            </section>
+    
+            <section id="team2">
+                <h2>Команда 2</h2>
+                <article class="team-info">
+                Название: Курилки <br> Очки: 0 <br> Осталось жизней: 5 
+                </article>
+            </section>
+        </div>
+        <canvas id="map"></canvas>
+        <div id="game-log">
+            <textarea id="logTextarea" rows="2" cols="22">Игра готова к запуску</textarea>
+        </div>
+    </div>
+
+    <div id="buttons">
+        <button id="startButton">Старт</button>
+        <button id="stopButton">Стоп</button>
+        <button id="joinButton">Подключиться</button>
+        <button id="disconnectButton">Отключиться</button>
+        <button id="reconnectButton">Переподключение</button>
+        <button id="cancelButton">Отменить игру</button>
+        <button id="exitButton">Выход</button>
+    </div>
+
+    <script src="../js/jquery.js" type="text/javascript"></script><!--required-->
+    <script src="../js/jquery.signalR.js" type="text/javascript"></script><!--required-->
+    <script src="../js/gameApi.js" type="text/javascript"></script><!--required-->
+    <script src="jsHelper.js" type="text/javascript"></script>
+    <script src="wrapper.js" type="text/javascript"></script>
+    <script src="game.js" type="text/javascript"></script>
+</body>
+</html>
